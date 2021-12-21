@@ -32,7 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  <your_name>_dbt_workshop:
+  dbt_lab:
       example:
           schema: example 
       staging:
