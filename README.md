@@ -6,6 +6,8 @@ Try running the following commands:
 - dbt run
 - dbt test
 
+In this project, there is seed data that some of the models depend on. You will therefore need to run 'dbt seed' once before 'dbt run'.
+
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
