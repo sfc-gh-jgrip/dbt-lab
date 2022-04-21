@@ -9,7 +9,7 @@ renamed as (
 
         "Company" as company,
         "Company Name" as company_name,
-        "Company Symbol" as company_symbol,
+        "Company Ticker" as company_symbol,
         "Stock Exchange" as stock_exchange,
         "Stock Exchange Name" as stock_exchange_name,
         "Indicator" as indicator,
