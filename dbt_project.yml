@@ -22,7 +22,7 @@ snapshot-paths: ["snapshots"]
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
-  - "dbt_packages"
+  - "dbt_modules"
 
 
 # Configuring models
@@ -33,11 +33,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_lab:
-      example:
-          schema: example 
-      staging:
-          schema: staging
-          materialized: view
-      marts:
-          schema: marts
-          materialized: table
+    staging:
+      materialized: view
+      snowflake_warehouse: demo_dbt_lab_wh
+    marts:
+      materialized: table
+      snowflake_warehouse: demo_dbt_lab_wh_l
